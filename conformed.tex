@@ -1,0 +1,338 @@
+\documentclass{ltjsarticle}
+\input{preamble}
+\title{各地麻将特色規則 解釈\footnote{翻訳・意訳・注釈に加え、矛盾しないように、またプレイに意味のない部分は簡単になるように、変更している。構成も体系的になるよう整えた。}}
+\begin{document}\maketitle
+\section{TODO}
+\begin{itemize}
+    \item http://www.ourgame.com/ にあるルールは試してみる
+\end{itemize}
+\section{成都}
+\subsection{牌}数牌のみ108枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 缺一門
+    \item[型] 基本型・七対
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[血戦到底] 壁牌が残っていれば、1人を残し全員のアガリとなるまで続行する。1つの打牌で複数人のアガリを認める。続行するときのツモ番はアガった者の下家\footnote{複数人の場合: 2人がアガり2人が残っていれば、放銃していない方}から。アガリ者の手牌 (摸和なら全部、点和なら打牌以外) は終局まで公開しない。
+    \item[輪荘] 最初にアガった者が次局の親となる。最初のアガリが複数なら放銃者\footnote{上家にした方が簡便だろう。}。誰もアガれなければ連荘。
+    \item[定缺] 配牌時に缺一門でなければ使わない色を決めて裏向きに打牌しておき、1巡目の打牌はこれを表向けることによって行う。配牌時に缺一門 (または清一色) になっていたら、裏向き打牌は行わず、最初に打牌する際に使わない色をコールする。競技会ではこの指定は萬・筒・索のカードによって行うことが望ましい。
+    \item[査叫] 流局時ノーテンかつ缺一門なら、テンパイかつ缺一門のプレイヤーへアガリ相当点を支払う。
+    \item[錯和] 終局時チョンボが発覚したら、すでにアガって抜けた者を除き、全プレイヤーへ半満貫を支払う。加えて、その後の摸和・点和にもアガリ点を支払う。\footnote{したがって点和も2倍}
+    \item[花猪] 流局時缺一門でなければ、すでにアガって抜けた者も含め、全プレイヤーへ満貫を支払う。
+    \item[刮風下雨] 槓は得点となる。暗槓は2点オール、大明槓は2点、加槓は即座に限り1点オール。
+    \item[吃なし]
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 点和はそのまま、摸和は全員から (1--3倍得)\footnote{1を足して全員からとすることもあるらしい}
+    \item 点数: $2^{\min\{(\text{飜数}), 3\}}$\footnote{満貫は3飜8点だが4飜16点とすることもあるらしい}
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[碰碰和] 1飜
+    \item[槓・根] 1飜 (4枚使いは、槓してもしなくても1飜)
+    \item[七対] 2飜
+    \item[清一色] 2飜
+    \item[全帯幺] 2飜
+    \item[将将碰] 3飜
+    \item[杠上開花] 1飜 (槓も加算)
+    \item[杠上炮] 1飜 (槓振り)
+    \item[搶杠和] 1飜
+\end{description}
+\section{陝西}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] なし
+    \item[型] 基本型・七対・全不靠・組合龍
+\end{description}
+\subsection{特有規則}
+\begin{itemize}
+    \item[炮子] 各プレイヤーは配牌時に0--4個の炮子を置く\footnote{順番は?}。炮子を措いた数に応じて得失点が増減する。
+    \item[刮風下雨] 成都に同じ。
+\end{itemize}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和は2点オール、点和は1点オール。親は得失点とも2倍。
+    \item 和牌者と非和牌者との間で、炮子の数の和を授受。点和なら全員分を1人で払う。
+\end{itemize}
+\section{太原}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 聴牌を宣言 (立牌のうち1枚を (裏向きに) 捨てる) こと
+    \item[型] 基本型
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[立牌] 配牌のうち最初に取る4枚のうち、ちょうど1枚を、聴牌宣言\footnote{「リーチ」発声することにするとわかりやすいだろう}と同時に、裏向きに切る。
+    \item[吃なし]
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和は2倍で全員から。点和放銃者がテンパイなら1倍で全員から、ノーテンなら1点を加算して3人分を放銃者から。
+    \item 点数: $1+\sum(\text{役})$
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[缺一門] 1点
+    \item[坎張] 1点
+    \item[辺張] 1点
+    \item[明槓] 1点
+    \item[暗槓] 2点
+    \item[親] 1点
+    \item[清龍] 20点
+\end{description}
+\section{北京}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 門前清または摸和 かつ 缺一門
+    \item[型] 基本型・七対
+    \item[例外] 三混 = 摸和のみ; 四混 = 自動和牌
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[混] オールマイティ。配牌後、1枚めくり標示牌とする。その次位牌 ([東南西北], [中発白]) が混となる。
+%    \item[焼荘] 1巡目に子3人が親と同じ牌を切ると親が3人の子に点数\footnote{額は不明。取り決めないこともあるらしい。}を支払う。1巡目から連続している限り何巡でも同様。
+%    親の第1打が風牌なら子は必ず合わせ打たなければならない。これを怠っていないことを示すため、その後に同じ牌を摸したら手牌へ加える前に開示する。
+    \item[互包] 同一人物からの3副露によって形成される。一方のアガリは他方が責任払いする。両者が同じ牌でアガったら、その差額に対して処理する。互包関係は複数同時に存在することもある。そのような者がアガったら、互包関係にある者それぞれが責任払いする (よって総得点は増える)。\footnote{複雑なケースには穴があるかもしれない}
+    \item[上楼] 流局1回につき次局は2倍
+    \item[荒牌] 王牌14枚、槓ごとに1増
+    \item[連荘] 流局連荘
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和は全員から。点和は取り決めによる (責任払い?)。親は2倍。\footnote{cf. TODO}
+    \item 得点: $(\text{点役})\times2^{(\text{飜役})}$
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[門前清] 1点1飜
+    \item[自摸] 1飜
+    \item[無混] 1点1飜
+    \item[碰碰和] 2点
+    \item[全求人] 2点
+    \item[坎5] 2点
+    \item[妙手回春] 2点 (アガれなかったらツモ切り)
+    \item[海底撈月] 1飜
+    \item[風一色] 6点 (乱和)\footnote{字一色を指す?}
+    \item[混一色] 2点
+    \item[清一色] 6点
+    \item[缺一門] 1点
+    \item[清龍] 3点
+    \item[平和] 1点 \footnote{参照先は組合龍になっている}
+    \item[杠上開花] 5点
+    \item[七対] 4点 (四帰一1つにつき2倍)
+    \item[四混] 8点 (手牌を問わない)
+\end{description}
+\section{長春}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 三色全 かつ 有幺九 かつ 有刻子\footnote{三元牌の将頭・箭槓・旋風槓・幺蛋・九蛋で代替可能} かつ (裸単騎でないまたは碰碰和) かつ 報聴\footnote{聴牌をたもつなら槓できる?}
+    \item[型] 基本型\footnote{4順子は不可}
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[箭槓] 配牌に中発白があれば槓でき、補充せず刻子となる。三元牌をツモってくるごとに加槓できる。
+    \item[風槓] 配牌に東南西北があれば槓できる。風牌をツモってくるごとに加槓できる。
+    \item[幺蛋/九蛋] 配牌に1または9の連子があれば槓でき、補充せず刻子となる。同種牌をツモってくるごとに加槓できる。
+    \item[大蛋] 配牌にあった一索・一筒・中・発・白の刻子が槓子になること。\footnote{配牌から刻子だったことの証明は?}
+    \item[搶杠碰] 特殊槓への加槓は搶杠和だけでなく搶杠碰できる。
+    \item[連荘] 流局連荘
+    \item[選宝] 第1聴牌者がサイコロを振り1舞めくる。それと同じ牌が宝牌である。ただし、もしそれがアガリ牌であれば対宝の摸和となる。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和は3人から。点和は記述なし。
+    \item 得点: $1+\sum(\text{役})$
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[門前清] 2点
+    \item[独聴] 2点
+    \item[宝] 4点 (宝牌によるツモアガリ)
+    \item[放銃] 2点
+    \item[摸和] 2点
+    \item[親] 2点
+    \item[碰碰和] 4点
+    \item[対宝] 4点
+    \item[明槓] 1点
+    \item[暗槓] 2点
+    \item[箭槓・風槓・幺蛋・九蛋] 1点
+    \item[明大蛋] 2点
+    \item[暗大蛋] 4点
+\end{description}
+\section{哈爾濱}
+\subsection{牌}数牌+紅中112枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 副露 かつ (清一色でない) かつ 有幺九 かつ 有刻子 かつ 有順子 かつ (裸単騎でない) かつ 聴牌宣言
+    \item[型] 基本型\footnote{4順子は不可}
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[吃聴] チーして聴牌宣言をするときは誰からでもチー可能。ポン・カンより優先。複数人の吃聴は上家優先。
+    \item[宝牌] 聴牌宣言があったら牌山の最後の牌をめくる。聴牌宣言後にツモるとオールマイティ。
+    \item[換宝] 宝牌が3枚とも場に出たら新たにめくる。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 点和は放銃者が聴牌なら基本は1点オール。門前清の他家は3点。放銃者がノーテンなら責任払いで、放銃者のぶんは3点、他家のぶんは聴牌のときに準じる。ともに、独聴の坎張は2倍。
+    \item 摸和は2点オール。門前清の他家は3点。独聴の坎張は2倍。
+    \item 摸宝は3点オール。独聴の坎張は2倍。
+    \item 宝中宝 (独聴の坎張かつアガリ牌=宝牌のツモアガリ) は12点オール。
+\end{itemize}
+\section{武漢}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 副露 かつ 中が手牌にない かつ (清一色 または 碰碰和 または 258将) かつ (百搭 または 大和)
+    \item[型] 一般型・乱字一色・乱将一色
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[中槓] 中は捨てても抜いても槓と数える。
+    \item[百搭] 壁牌の尾部から5墩目の上をめくり標示牌とする。次位牌 ([東南西北中発白]) はいつでもオールマイティ。元の牌として使うと1飜
+    \item[王牌] 王牌10枚。最終1巡は摸和でなければ打牌せず下家のツモ番に。槓もできない。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和・点和ともに3人払い。ただし摸和の場合および放銃者は大和で1.5倍、小和で2倍。
+    \item 点数: $\max\{10(\text{大和}), 1\}\times2^{(\text{和牌者飜})+(\text{支払者飜})}$
+    \item 包: 搶杠和・清一色の3副露目・ノーテンで全求人へ放銃
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[碰碰和] 大和
+    \item[清一色] 大和
+    \item[将一色] 大和
+    \item[字一色] 大和
+    \item[開口] 副露1飜
+    \item[暗槓] 2飜
+\end{description}
+\section{長沙}
+\subsection{牌}数牌のみ108枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 小和・大和または258将
+    \item[型] 基本型・七対\footnote{四帰一は禁止?}
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[小和] 配牌が「四帰一」「258なし」「双暗刻」「缺一門」のいずれか
+    \item[扎鳥] アガリが出たら次のツモ牌をめくる (海底ならアガリ牌そのものとする)。親を1として、出た数字にあたる人の関係する点数授受は2倍。
+    \item[海底] 海底をツモりたくなければパスできる。\footnote{4人目はパスできるのか?}ツモったとき、アガリでなければツモ切らなければならない。通常同様複数人に放銃しうる。4人とも拒否したら流局して海底牌を本来ツモるはずだった人が次の親。
+    \item[輪荘] アガった人が次局の親。複数なら放銃者。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[]
+\end{description}
+\section{上海}
+\subsection{牌}144枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 混一色または碰碰和
+    \item[型] 基本型・乱字一色
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[開宝] サイコロがゾロ目または$1+4$のときは点数が2倍。
+    \item[荒番] 流局の次は点数が2倍。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[]
+\end{description}
+\section{杭州}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 二連荘以上 または 摸和 または 親の点和 または 親から点和
+    \item[型] 基本型・七対
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[財神] 配牌後にサイコロを振り出た目だけ壁牌の尾部から数えて残し、次をめくる。同じ牌を財神とし、オールマイティになる。白も財神となる。
+    \item[暴頭] オールマイティ1枚の単騎 (4面子または6対子) 摸和は2倍。杠上開花ならさらに2倍。
+    \item[財飄] オールマイティ2枚から1枚切った暴頭はさらに2倍。切った直後の1巡に他家は碰・吃・点和できない。杠上開花ならさらに2倍。さらにアガらないことを選択すると他家は碰・吃・点和できるようになるが、次巡にアガればさらに2倍。
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item 摸和: 親子間は2倍。
+    \item 点和: (3人分を1人で支払う?)
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[七対] 1飜
+    \item[四帰一] 七対のとき1飜
+\end{description}
+\section{福州}
+\subsection{牌}144枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] なし
+    \item[型] 基本型 (17枚)
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[]
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[]
+\end{description}
+\section{広東花}
+\subsection{牌}144枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] 2飜
+    \item[型] 基本型・七対
+\end{description}
+\subsection{特有規則}
+とくになし
+\subsection{点数計算}
+\begin{itemize}
+    \item 点和: 放銃者は2倍、他は1倍。
+    \item 摸和: 2倍オール (自摸の1飜とは別)
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[]
+\end{description}
+\section{広東素}
+\subsection{牌}136枚
+\subsection{和牌条件と型}
+\begin{description}
+    \item[条件] なし
+    \item[型] 基本型・七対
+\end{description}
+\subsection{特有規則}
+\begin{description}
+    \item[]
+\end{description}
+\subsection{点数計算}
+\begin{itemize}
+    \item
+\end{itemize}
+\subsection{役}
+\begin{description}
+    \item[]
+\end{description}
+\end{document}
