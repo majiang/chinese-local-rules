@@ -1,6 +1,6 @@
 \documentclass{ltjsarticle}
 \input{preamble}
-\title{各地麻将特色規則 解釈\footnote{翻訳・意訳・注釈に加え、矛盾しないように、またプレイに意味のない部分は簡単になるように、変更している。構成も体系的になるよう整えた。}}
+\title{各地麻将特色規則 解釈\footnote{翻訳・意訳・注釈に加え、矛盾しないように、またプレイに意味のない部分は簡単になるように、変更している。構成も体系的になるよう整えた。ourgame.comを参考に、一部そちらを優先した。}}
 \begin{document}\maketitle
 \tableofcontents
 \addtocounter{section}{-1}
@@ -107,66 +107,62 @@
 \end{description}
 \subsection{点数計算}
 \begin{itemize}
-    \item 摸和は全員から。点和は取り決めによる (責任払い?)。親は2倍。\footnote{cf. TODO}
-    \item 得点: $(\text{点役})\times2^{(\text{飜役})}$
+    \item 摸和は全員から。点和は全員分。親は2倍。
+    \item 得点: $2^{(\text{役})+(\text{上楼})}$
 \end{itemize}
 \subsection{役}
 \begin{description}
-    \item[門前清] 1点1飜
     \item[自摸] 1飜
-    \item[無混] 1点1飜
-    \item[碰碰和] 2点
-    \item[全求人] 2点
-    \item[坎5] 2点
-    \item[妙手回春] 2点 (アガれなかったらツモ切り)
-    \item[海底撈月] 1飜
-    \item[風一色] 6点 (乱和)\footnote{字一色を指す?}
-    \item[混一色] 2点
-    \item[清一色] 6点
-    \item[缺一門] 1点
-    \item[清龍] 3点
-    \item[平和] 1点 \footnote{参照先は組合龍になっている}
-    \item[杠上開花] 5点
-    \item[七対] 4点 (四帰一1つにつき2倍)
-    \item[四混] 8点 (手牌を問わない)
+    \item[門前清] 1飜
+    \item[碰碰和] 1飜
+    \item[全求人] 1飜
+    \item[独5聴] 1飜
+    \item[妙手回春] 1飜
+    \item[清龍] 2飜
+    \item[七対] 2飜 ($+$四帰一1つにつき1飜)
+    \item[杠上開花] 2飜
+    \item[清一色] 3飜
+    \item[天和] 6飜
+    \item[地和] 5飜
+    \item[人和] 5飜
+    \item[四混] 9飜
 \end{description}
 \section{長春}
 \subsection{牌}136枚
 \subsection{和牌条件と型}
 \begin{description}
-    \item[条件] 三色全 かつ 有幺九 かつ 有刻子\footnote{三元牌の将頭・箭槓・旋風槓・幺蛋・九蛋で代替可能} かつ (裸単騎でないまたは碰碰和) かつ 報聴\footnote{聴牌をたもつなら槓できる?}
-    \item[型] 基本型\footnote{4順子は不可}
+    \item[条件] 三色全 かつ 有幺九 かつ 有刻子\footnote{三元牌の将頭・箭槓・旋風槓・幺蛋・九蛋で代替可能} かつ (裸単騎でないまたは碰碰和) かつ 報聴\footnote{聴牌をたもつなら槓できる}
+    \item[型] 基本型
 \end{description}
 \subsection{特有規則}
 \begin{description}
     \item[箭槓] 配牌に中発白があれば槓でき、補充せず刻子となる。三元牌をツモってくるごとに加槓できる。
     \item[風槓] 配牌に東南西北があれば槓できる。風牌をツモってくるごとに加槓できる。
     \item[幺蛋/九蛋] 配牌に1または9の連子があれば槓でき、補充せず刻子となる。同種牌をツモってくるごとに加槓できる。
-    \item[大蛋] 配牌にあった一索・一筒・中・発・白の刻子が槓子になること。\footnote{配牌から刻子だったことの証明は?}
+    \item[大蛋] 一索・一筒・中・発・白の槓子。
     \item[搶杠碰] 特殊槓への加槓は搶杠和だけでなく搶杠碰できる。
     \item[連荘] 流局連荘
-    \item[選宝] 第1聴牌者がサイコロを振り1舞めくる。それと同じ牌が宝牌である。ただし、もしそれがアガリ牌であれば対宝の摸和となる。
+    \item[選宝] 第1聴牌者が次のツモ番にサイコロを振り1枚を他家に見られないように見る。それと同じ牌が宝牌で、聴牌後にツモればオールマイティである。もしそれがアガリ牌であれば対宝の摸和となる。次以降の聴牌者は宝牌を見ることができる。宝牌が3枚とも場に見えたらサイコロを振って選び直す。
 \end{description}
 \subsection{点数計算}
 \begin{itemize}
-    \item 摸和は3人から。点和は記述なし。
-    \item 得点: $1+\sum(\text{役})$
+    \item 摸和は3人から倍。点和は放銃者が倍。
+    \item 得点: $2^{\sum(\text{飜役})}$
+    \item 杠の点数は流局でも授受\footnote{杠の時点でやりとりすると思われる}
 \end{itemize}
 \subsection{役}
 \begin{description}
-    \item[門前清] 2点
-    \item[独聴] 2点
-    \item[宝] 4点 (宝牌によるツモアガリ)
-    \item[放銃] 2点
-    \item[摸和] 2点
-    \item[親] 2点
-    \item[碰碰和] 4点
-    \item[対宝] 4点
-    \item[明槓] 1点
-    \item[暗槓] 2点
-    \item[箭槓・風槓・幺蛋・九蛋] 1点
+    \item[独聴] 1飜
+    \item[宝] 2飜 (宝牌によるツモアガリ)
+    \item[対宝] 2飜 (宝牌待ち)
+    \item[碰碰和] 2飜
+    \item[親] 1飜 アガリ者のみ
+    \item[門前清] 1飜
+    \item[明槓] 1点 (一索・一筒・中・発・白 以外)
+    \item[暗槓] 2点 (一索・一筒・中・発・白 以外)
     \item[明大蛋] 2点
     \item[暗大蛋] 4点
+    \item[箭槓・風槓・幺蛋・九蛋] 1点
 \end{description}
 \section{哈爾濱}
 \subsection{牌}数牌+紅中112枚
@@ -227,36 +223,58 @@
 \begin{description}
     \item[小和] 配牌が「四帰一」「258なし」「双暗刻」「缺一門」のいずれか
     \item[扎鳥] アガリが出たら次のツモ牌をめくる (海底ならアガリ牌そのものとする)。親を1として、出た数字にあたる人の関係する点数授受は2倍。
-    \item[海底] 海底をツモりたくなければパスできる。\footnote{4人目はパスできるのか?}ツモったとき、アガリでなければツモ切らなければならない。通常同様複数人に放銃しうる。4人とも拒否したら流局して海底牌を本来ツモるはずだった人が次の親。
+    \item[海底] 海底をツモりたくなければパスできる。ツモったとき、アガリでなければツモ切らなければならず、通常同様複数人に放銃しうる。4人とも拒否したら流局して海底牌を本来ツモるはずだった人が次の親。
     \item[輪荘] アガった人が次局の親。複数なら放銃者。
 \end{description}
 \subsection{点数計算}
 \begin{itemize}
-    \item
+    \item 小和: 大和でない258将の和牌、および配牌の小和 (摸和)。摸和は10オール、点和は1人ぶん。授受いずれかが親なら10加算。
+    \item 大和: 摸和は30オール、点和は60点。授受いずれかが親なら10加算。
+    \item 複合: 小和どうし、大和どうしのみ認める。
 \end{itemize}
 \subsection{役}
 \begin{description}
-    \item[]
+    \item[天和] 大和
+    \item[地和] 大和 (親の第一打)
+    \item[碰碰和] 大和
+    \item[乱将一色] 大和 (258なら面子は問わない)
+    \item[清一色] 大和
+    \item[海底撈月] 大和
+    \item[七対] 大和
+    \item[杠上开花] 大和
+    \item[搶杠和] 大和
+    \item[杠上包] 大和
 \end{description}
 \section{上海}
 \subsection{牌}144枚
 \subsection{和牌条件と型}
 \begin{description}
-    \item[条件] 混一色または碰碰和
+    \item[条件] 混一色\footnote{清一色を含む}または碰碰和
     \item[型] 基本型・乱字一色
 \end{description}
 \subsection{特有規則}
 \begin{description}
     \item[開宝] サイコロがゾロ目または$1+4$のときは点数が2倍。
     \item[荒番] 流局の次は点数が2倍。
+    \item[連荘] アガリ親。
 \end{description}
 \subsection{点数計算}
 \begin{itemize}
-    \item
+    \item 支払い方は不明
+    \item 点数: $\max\{\min\{2+(\text{花}),10\}(\text{満貫役})\}$
 \end{itemize}
 \subsection{役}
 \begin{description}
-    \item[]
+    \item[混一色] $2+(\text{花})$
+    \item[碰碰和] $2+(\text{花})$
+    \item[天和] 10満貫
+    \item[地和] 8満貫 (親以外の1巡目のアガリ)
+    \item[清一色] 満貫
+    \item[混一色碰碰和] 満貫
+    \item[清一色碰碰和] 2満貫
+    \item[乱字一色] 2満貫
+    \item[字一色] 4満貫
+    \item[全求人] 満貫 (満貫未満の場合のみ)
 \end{description}
 \section{杭州}
 \subsection{牌}136枚
