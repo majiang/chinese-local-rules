@@ -1,13 +1,13 @@
-\documentclass{ltjsarticle}
+\documentclass[a4paper,twocolumn,12pt]{ltjsarticle}
 \input{preamble}
+\makeatletter
+\def\section{\vfill\eject\@startsection {section}{1}{\z@}{-3.5ex plus -1ex minus -.2ex}{2.3 ex plus .2ex}{\Large\bf}}
+\makeatother
+\setcounter{tocdepth}1
 \title{各地麻将特色規則 解釈\footnote{翻訳・意訳・注釈に加え、矛盾しないように、またプレイに意味のない部分は簡単になるように、変更している。構成も体系的になるよう整えた。ourgame.comを参考に、一部そちらを優先した。}}
 \begin{document}\maketitle
 \tableofcontents
-\addtocounter{section}{-1}
-\section{TODO}
-\begin{itemize}
-    \item http://www.ourgame.com/ にあるルールは試してみる
-\end{itemize}
+\clearpage
 \section{成都}
 \subsection{牌}数牌のみ108枚
 \subsection{和牌条件と型}
@@ -19,7 +19,7 @@
 \begin{description}
     \item[血戦到底] 壁牌が残っていれば、1人を残し全員のアガリとなるまで続行する。1つの打牌で複数人のアガリを認める。続行するときのツモ番はアガった者の下家\footnote{複数人の場合: 2人がアガり2人が残っていれば、放銃していない方}から。アガリ者の手牌 (摸和なら全部、点和なら打牌以外) は終局まで公開しない。
     \item[輪荘] 最初にアガった者が次局の親となる。最初のアガリが複数なら放銃者\footnote{上家にした方が簡便だろう。}。誰もアガれなければ連荘。
-    \item[定缺] 配牌時に缺一門でなければ使わない色を決めて裏向きに打牌しておき、1巡目の打牌はこれを表向けることによって行う。配牌時に缺一門 (または清一色) になっていたら、裏向き打牌は行わず、最初に打牌する際に使わない色をコールする。競技会ではこの指定は萬・筒・索のカードによって行うことが望ましい。
+    \item[定缺] 使わない色を配牌時に裏向きに打牌。競技会ではこの指定は萬・筒・索のカードによって行うことが望ましい。
     \item[査叫] 流局時ノーテンかつ缺一門なら、テンパイかつ缺一門のプレイヤーへアガリ相当点を支払う。
     \item[錯和] 終局時チョンボが発覚したら、すでにアガって抜けた者を除き、全プレイヤーへ半満貫を支払う。加えて、その後の摸和・点和にもアガリ点を支払う。\footnote{したがって点和も2倍}
     \item[花猪] 流局時缺一門でなければ、すでにアガって抜けた者も含め、全プレイヤーへ満貫を支払う。
